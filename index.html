@@ -8,12 +8,14 @@
     body {
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       background-color: #eaf4fc; /* Light blue background */
       font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
     }
     .card {
       background-color: white;
@@ -22,28 +24,25 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
-    .highlight {
-      display: inline-block;
-      background-color: #d3d3d3; /* Light grey background */
-      padding: 8px 16px;
+    .name-box {
+      background-color: #d3d3d3; /* Light grey */
+      padding: 10px 20px;
       border-radius: 8px;
-    }
-    .highlight p {
-      background-color: #d3d3d3; /* Light grey background for paragraph too */
-      padding: 6px 12px;
-      margin-top: 10px;
-      border-radius: 6px;
+      position: absolute;
+      bottom: 30px; /* Adjust distance from bottom */
+      text-align: center;
+      font-size: 1rem;
+      color: #2c3e50;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="highlight">
-      <h1>Welcome to my page</h1>
-    </div>
-    <div class="highlight">
-      <p>This is MaheshKumar G</p>
-    </div>
+    <h1>Welcome to my page</h1>
+  </div>
+
+  <div class="name-box">
+    This is MaheshKumar G
   </div>
 </body>
 </html>
